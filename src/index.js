@@ -24,7 +24,7 @@ function* getZooAnimals() {
     console.log(`In 'GET_ZOO_ANIMALS' Saga`);
     try {
         let response = yield axios.get('/zoo')
-        yield put({type: 'SET_ZOO_ANIMALS`', payload: response.data})
+        yield put({type: 'SET_ZOO_ANIMALS', payload: response.data})
     } catch (err) {
         alert('error in get zoo animals')
     }
