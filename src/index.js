@@ -28,7 +28,7 @@ function* getZooAnimals() {
     } catch (err) {
         alert('error in get zoo animals')
     }
-}
+} 
 
 // Create sagaMiddleware
 const sagaMiddleware = createSagaMiddleware();
